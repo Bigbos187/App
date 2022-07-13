@@ -7,9 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
     <style>
-            .container{
+            .containerr{
                 width: 500px;
-                height: 500px;
+                height: 100px;
                 background-color:antiquewhite;
             }
             .videoemlement{
@@ -17,14 +17,24 @@
                 height: 500px;
                 background-color: #111;
             }
+            button{
+                width: 100px;
+                height: 50px;
+            }
+            .no:hover:after {
+                content: "! it's love"
+            }
     </style>
 </head>
 <body>
     <div class="row justify-content-center">
-        <h1 class="col-2">Hello bro</h1>
-       <button class="col-2" id="view" onclick="myFunction()">Click this</button>
+        <!-- <button class="col-2" id="view" onclick="myFunction()">Click this</button> -->
+        <h1 class="col-12 text-center">Hmmmmm!!!You like me???????</h2>
     </div>
-    <div class="container" id="camera">
+    <div class="row containerr justify-content-center mx-auto " id="camera">
+        <button class="btn-success col-12 " onClick="confirm('Correct!!!')"> <span>Yes</span></button>
+        <button class="btn-danger col-12  no" onClick="confirm( 'Correct!!!' )"> <span>No</span></button>    
+       
     </div>
 <script>
     function myFunction() {
